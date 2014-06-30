@@ -1,0 +1,953 @@
+[editor]
+
+;Show line numbers.
+; Type: boolean 
+line_numbers = true
+
+;Visible tabs.
+; Type: boolean 
+visible_tabs = false
+
+;Whether to use the context-sensitive indentation that the mode provides (or just indent the same as the line before).
+; Type: boolean 
+smart_indent = true
+
+;Font size.
+; Type: int 
+font_size = 12
+
+;Scroll or wrap for long lines.
+; Type: boolean 
+wrap = false
+
+;Tab size.
+; Type: int 
+tab_size = 4
+
+;Highlight active line.
+; Type: boolean 
+highlight_active = true
+
+;Editor theme.
+; Type: list 
+; Values: 
+;  3024-day : 3024-day
+;  3024-night : 3024-night
+;  ambiance : ambiance
+;  ambiance-mobile : ambiance-mobile
+;  arstotzka : arstotzka
+;  base16-dark : base16-dark
+;  base16-light : base16-light
+;  blackboard : blackboard
+;  bold : bold
+;  cobalt : cobalt
+;  default : default
+;  earthsong : earthsong
+;  eclipse : eclipse
+;  elegant : elegant
+;  erlang-dark : erlang-dark
+;  frontier : frontier
+;  juicy : juicy
+;  lesser-dark : lesser-dark
+;  mbo : mbo
+;  mellow : mellow
+;  midnight : midnight
+;  mintchoc : mintchoc
+;  monokai : monokai
+;  neat : neat
+;  night : night
+;  paraiso-dark : paraiso-dark
+;  paraiso-light : paraiso-light
+;  pastel : pastel
+;  pastel-on-dark : pastel-on-dark
+;  peacock : peacock
+;  rubyblue : rubyblue
+;  solarized light : solarized light
+;  solarized dark : solarized dark
+;  the-matrix : the-matrix
+;  tomorrow-night-eighties : tomorrow-night-eighties
+;  twilight : twilight
+;  vibrant-ink : vibrant-ink
+;  xq-dark : xq-dark
+;  xq-light : xq-light
+theme = default
+
+;Use tabs for indentation.
+; Type: boolean 
+indent_with_tabs = false
+
+;Allow code folding.
+; Type: boolean 
+folding = true
+
+;Enable linting (Javascript, JSON & CoffeeScript).
+; Type: boolean 
+linting = false
+
+;Show matching brackets to be highlighted whenever the cursor is next to them.
+; Type: boolean 
+match_brackets = true
+
+;Highlights the tags around the cursor.
+; Type: boolean 
+match_tags = true
+
+;Auto-close brackets and quotes when typed.
+; Type: boolean 
+auto_close_brackets = true
+
+;Auto-close tags when the '/' of a closing tag is typed.
+; Type: boolean 
+auto_close_tags_when_opening = true
+
+;Auto-close the tag when the final '>' of an opening tag is typed.
+; Type: boolean 
+auto_close_tags_when_closing = true
+
+;A comma-separated list of tag names that should, when opened, cause a blank line to be added inside the tag, and the blank line and closing line to be indented.
+; Type: string 
+auto_close_tags_indented = applet,blockquote,body,button,div,dl,fieldset,form,frameset,head,html,iframe,layer,legend,object,ol,select,table,ul
+
+;A comma-separated list of tag names that should not be autoclosed.
+; Type: string 
+auto_close_tags_exclude = area,base,br,col,command,embed,hr,img,input,keygen,link,meta,param,source,track,wbr
+
+;Show whitespace.
+; Type: boolean 
+show_trailing_space = false
+
+;Prefix new lines inside C-like block comments with an asterisk when Enter is pressed.
+; Type: boolean 
+continue_comments = true
+
+;Default key map to use
+; Type: list 
+; Values: 
+;  default : default
+;  vim : vim
+;  emacs : emacs
+;  sublime : sublime
+keymap = default
+
+;Show completions automatic after 2 symbols types or special symbol used.
+; Type: boolean 
+automatic_completions = true
+
+;Show auto-completions.
+; Type: hotkey 
+key_autocomplete = Ctrl+Space
+
+;Toggle comment.
+; Type: hotkey 
+key_toggleComment = Ctrl+/
+
+;Go to start of line.
+; Type: hotkey 
+key_go_line_start = Alt+Left
+
+;Go to end of line.
+; Type: hotkey 
+key_go_line_end = Alt+Right
+
+;Select all.
+; Type: hotkey 
+key_select_all = Ctrl+A
+
+;Delete selected or active line.
+; Type: hotkey 
+key_remove_selected_line = Ctrl+Shift+K
+
+;Empty line.
+; Type: hotkey 
+key_delete_line = Alt+Shift+K
+
+;Delete word before caret.
+; Type: hotkey 
+key_del_group_before = Ctrl+Backspace
+
+;Delete word after caret.
+; Type: hotkey 
+key_del_group_after = Ctrl+Delete
+
+;Delete line before caret.
+; Type: hotkey 
+key_del_line_left = Ctrl+Shift+Backspace
+
+;Delete line after caret.
+; Type: hotkey 
+key_kill_line = Alt+Shift+Backspace
+
+;Go to end of document.
+; Type: hotkey 
+key_go_doc_end = Ctrl+End
+
+;Find.
+; Type: hotkey 
+key_find = Ctrl+F
+
+;Find next.
+; Type: hotkey 
+key_find_next = Ctrl+G
+
+;Go to beginning of document.
+; Type: hotkey 
+key_go_doc_start = Ctrl+Home
+
+;Go left.
+; Type: hotkey 
+key_go_group_left = Ctrl+Left
+
+;Go right
+; Type: hotkey 
+key_go_group_right = Ctrl+Right
+
+;Redo.
+; Type: hotkey 
+key_redo = Ctrl+Y
+
+;Undo.
+; Type: hotkey 
+key_undo = Ctrl+Z
+
+;Indent less.
+; Type: hotkey 
+key_indent_less = Ctrl+[
+
+;Indent more
+; Type: hotkey 
+key_indent_more = Ctrl+]
+
+;Replace.
+; Type: hotkey 
+key_replace = Shift+Ctrl+F
+
+;Find previous.
+; Type: hotkey 
+key_find_prev = Shift+Ctrl+G
+
+;Replace all.
+; Type: hotkey 
+key_replace_all = Shift+Ctrl+R
+
+;Disabled save. do nothing.
+; Type: hotkey 
+key_fake_save = Ctrl-S
+
+;Show line numbers: Toggle.
+; Type: hotkey 
+key_toggle:line_numbers = 
+
+;Visible Tabs: Toggle.
+; Type: hotkey 
+key_toggle:visible_tabs = 
+
+;Word wrap: Toggle.
+; Type: hotkey 
+key_toggle:wrap = 
+
+;Highlight active line: Toggle.
+; Type: hotkey 
+key_toggle:highlight_active = 
+
+;Use tabs for indentation: Toggle.
+; Type: hotkey 
+key_toggle:indent_with_tabs = 
+
+;Code linting: Toggle.
+; Type: hotkey 
+key_toggle:linting = 
+
+;Code folding: Toggle.
+; Type: hotkey 
+key_toggle:folding = 
+
+;Show matching brackets: Toggle.
+; Type: hotkey 
+key_toggle:match_brackets = 
+
+;Auto Close brackets: Toggle.
+; Type: hotkey 
+key_toggle:auto_close_brackets = 
+
+;Auto close tags on opening: Toggle.
+; Type: hotkey 
+key_toggle:auto_close_tags_when_opening = 
+
+;Auto close on close: Toggle.
+; Type: hotkey 
+key_toggle:auto_close_tags_when_closing = 
+
+;Show trailing whitespace: Toggle.
+; Type: hotkey 
+key_toggle:show_trailing_space = 
+
+;Continue comments: Toggle.
+; Type: hotkey 
+key_toggle:continue_comments = 
+
+;Automatic Completions: Toggle.
+; Type: hotkey 
+key_toggle:automatic_completions = 
+
+
+
+[ide]
+
+;Warn user before leaving Codio. NOTE: `warn_before_leaving` is not supported in IE10.
+; Type: boolean 
+warn_before_leaving = true
+
+;New file.
+; Type: hotkey 
+new_file = Alt+Shift+N
+
+;New folder.
+; Type: hotkey 
+new_folder = Alt+Ctrl+Shift+N
+
+;Delete item.
+; Type: hotkey 
+delete_item = Del
+
+;Rename item.
+; Type: hotkey 
+rename_item = Ctrl+Alt+E
+
+;Upload item.
+; Type: hotkey 
+upload_item = 
+
+;Reset to the default layout.
+; Type: hotkey 
+layout_default = Ctrl+Alt+R
+
+;simple layout.
+; Type: hotkey 
+layout_simple = 
+
+;2 columns layout.
+; Type: hotkey 
+layout_2_columns = 
+
+;2 rows layout.
+; Type: hotkey 
+layout_2_rows = 
+
+;Showcase layout.
+; Type: hotkey 
+layout_showcase = 
+
+;Split the selected panel horizontally.
+; Type: hotkey 
+panel_split_horizontal = Ctrl+Alt+H
+
+;Split the selected panel vertically.
+; Type: hotkey 
+panel_split_vertical = Ctrl+Alt+V
+
+;Join with Closest.
+; Type: hotkey 
+panel:join = 
+
+;Close the selected panel.
+; Type: hotkey 
+panel_close = Ctrl+Alt+C
+
+;Close the selected tab.
+; Type: hotkey 
+tab_close = Alt+W
+
+;Close the tabs in selected panel.
+; Type: hotkey 
+tab_close_all = Alt+Shift+W
+
+;Close others tabs in selected panel, except current.
+; Type: hotkey 
+tab_close_others = Ctrl+Alt+W
+
+;Close tabs in selected panel on the left side of the current.
+; Type: hotkey 
+tab_close_left = 
+
+;Close tabs in selected panel on the right side of the current.
+; Type: hotkey 
+tab_close_right = 
+
+;Cycle to the tab which is to the left of the current tab.
+; Type: hotkey 
+tab_switch_left = Alt+Shift+,
+
+;Cycle to the tab which is to the right of the current tab.
+; Type: hotkey 
+tab_switch_right = Alt+Shift+.
+
+;Go to fullscreen mode
+; Type: hotkey 
+fullscreen = F11
+
+;Preview
+; Type: hotkey 
+preview = Shift+F9
+
+;Deploy
+; Type: hotkey 
+deploy = Alt+F9
+
+;Run
+; Type: hotkey 
+run = Ctrl+F9
+
+;Open a file.
+; Type: hotkey 
+key_quick_open = Ctrl+O
+
+;Run an action.
+; Type: hotkey 
+key_quick_run = Ctrl+Shift+P
+
+;Escape button press
+; Type: hotkey 
+key_esc = Esc
+
+;Switch active tab view type.
+; Type: hotkey 
+switch_view_type = Ctrl+J
+
+;Switch to panel to the left of the current panel
+; Type: hotkey 
+panel_switch_left = Ctrl-Shift-Alt-Left
+
+;Switch to panel to the right of the current panel
+; Type: hotkey 
+panel_switch_right = Ctrl-Shift-Alt-Right
+
+;Switch to panel above the current panel
+; Type: hotkey 
+panel_switch_up = Ctrl-Shift-Alt-Up
+
+;Switch to panel below the current panel
+; Type: hotkey 
+panel_switch_down = Ctrl-Shift-Alt-Down
+
+
+
+[code-beautifier]
+
+;Indent level
+; Type: int 
+indent_level = 0
+
+;Indent with tabs. Overrides indent char and indent size.
+; Type: boolean 
+indent_with_tabs = false
+
+;Preserve line-breaks.
+; Type: boolean 
+preserve_newlines = false
+
+;Number of line-breaks to be preserved in one chunk.
+; Type: int 
+max_preserve_newlines = 5
+
+;Enable jslint-strict mode.
+; Type: boolean 
+jslint_happy = false
+
+;Brace style.
+; Type: list 
+; Values: 
+;  collapse : collapse
+;  expand : expand
+;  end-expand : end-expand
+brace_style = collapse
+
+;Preserve array indentation.
+; Type: boolean 
+keep_array_indentation = false
+
+;Preserve function indentation.
+; Type: boolean 
+keep_function_indentation = false
+
+;Space before conditional.
+; Type: boolean 
+space_before_conditional = false
+
+;Break chained method calls across subsequent lines.
+; Type: boolean 
+break_chained_methods = false
+
+;Indent eval code.
+; Type: boolean 
+eval_code = false
+
+;Decode printable characters encoded in XNN notation.
+; Type: boolean 
+unescape_strings = false
+
+;Wrap lines at next opportunity after N characters.
+; Type: int 
+wrap_line_length = 0
+
+;Indent scripts.
+; Type: list 
+; Values: 
+;  keep : keep
+;  separate : separate
+;  normal : normal
+indent-scripts = normal
+
+;Format the code.
+; Type: hotkey 
+key_format_code = Ctrl+Shift+B
+
+;Strict linting: Toggle.
+; Type: hotkey 
+key_toggle:jslint_happy = 
+
+;Preserve array indentation: Toggle.
+; Type: hotkey 
+key_toggle:keep_array_indentation = 
+
+;Preserve function indentation: Toggle.
+; Type: hotkey 
+key_toggle:keep_function_indentation = 
+
+;Space before conditional: Toggle.
+; Type: hotkey 
+key_toggle:space_before_conditional = 
+
+;Break chained methods calls across lines: Toggle.
+; Type: hotkey 
+key_toggle:break_chained_methods = 
+
+;Indent eval code: Toggle.
+; Type: hotkey 
+key_toggle:eval_code = 
+
+;Decode printable characters in XNN notation: Toggle.
+; Type: hotkey 
+key_toggle:unescape_strings = 
+
+
+
+[codio-annotation]
+
+;Annotation Panel width in %, if annotation item contains code.
+; Type: int 
+annotation_panel_width_with_code = 45
+
+;Annotation Panel width in %, if annotation item does not contain code.
+; Type: int 
+annotation_panel_width_no_code = 100
+
+;Add annotation tag
+; Type: hotkey 
+key_annotation_add = Alt+A
+
+;Toggle between annotations.md definition file and tag
+; Type: hotkey 
+key_annotation_toggle = Alt+Shift+A
+
+;Start annotation tour.
+; Type: hotkey 
+key_annotation_start = 
+
+;Add File To annotations.
+; Type: hotkey 
+key_add_file_to_definition = 
+
+
+
+[view-javascript-code]
+
+;Show browser methods in intellisense. Set to false if you are developing server side code.
+; Type: boolean 
+jquery_autocomplete = true
+
+;Run ternJs as a worker.
+; Type: boolean 
+ternjs_worker = true
+
+;jQuery autocomplete: Toggle.
+; Type: hotkey 
+key_toggle:jquery_autocomplete = 
+
+
+
+[git]
+
+;Git: pull from origin
+; Type: hotkey 
+pull = 
+
+;Git: push to origin
+; Type: hotkey 
+push = 
+
+;Git: create a new branch
+; Type: hotkey 
+show-create-branch = 
+
+;Git: switch between branches
+; Type: hotkey 
+show-switch-branch = 
+
+;Git: delete a branch
+; Type: hotkey 
+show-delete-branch = 
+
+;Git: show remotes
+; Type: hotkey 
+remotes-show = 
+
+
+
+[terminal]
+
+;Font size.
+; Type: int 
+font_size = 12
+
+;Font color.
+; Type: string 
+font_color = white
+
+;Background color.
+; Type: string 
+background_color = black
+
+;Cursor color.
+; Type: string 
+cursor_color = white
+
+;Number of lines available in the scroll history.
+; Type: int 
+scrollback = 3000
+
+;Quick Connect
+; Type: hotkey 
+show-connect-dialog = 
+
+;Connections Manager
+; Type: hotkey 
+show-connections-manager = 
+
+;Terminal. SSH connection to the box
+; Type: hotkey 
+backend-connection = Shift+Alt+T
+
+
+
+[preview]
+
+;This value will be used when user previews the project.
+; Type: string 
+index_file = 
+
+
+
+[salesforce]
+
+;Push All
+; Type: hotkey 
+pushall = 
+
+;Pull All
+; Type: hotkey 
+pullall = 
+
+;Push Single File
+; Type: hotkey 
+pushsingle = 
+
+;Pull Single File
+; Type: hotkey 
+pullsingle = 
+
+;Clear Log
+; Type: hotkey 
+clear-log = 
+
+;Settings
+; Type: hotkey 
+settings = 
+
+
+
+[emmet]
+
+;Tag case
+; Type: string 
+tag_case = asis
+
+;Attr case
+; Type: string 
+attr_case = asis
+
+;Attr quotes
+; Type: string 
+attr_quotes = double
+
+;each tag on new line
+; Type: string 
+tag_nl = decide
+
+;with tag_nl === true, defines if leaf node (e.g. node with no children) should have formatted line breaks
+; Type: boolean 
+tag_nl_leaf = false
+
+;Place cursor
+; Type: boolean 
+place_cursor = true
+
+;indent tags
+; Type: boolean 
+indent = true
+
+;how many inline elements should be to force line break (set to 0 to disable)
+; Type: int 
+inline_break = 3
+
+;use self-closing style for writing empty elements, e.g. <br /> or <br>
+; Type: string 
+self_closing_tag = xhtml
+
+;Profile-level output filters, re-defines syntax filters 
+; Type: string 
+filters = 
+
+;Additional filters applied to abbreviation. Unlike 'filters', this preference doesn't override default filters but add the instead every time given profile is chosen
+; Type: string 
+extraFilters = 
+
+;Expand abbreviation
+; Type: hotkey 
+expand_abbreviation = Ctrl-E
+
+;Expand abbreviation with tab
+; Type: hotkey 
+expand_abbreviation_with_tab = Tab
+
+;Match pair outward
+; Type: hotkey 
+match_pair_outward = Ctrl-D
+
+;Match pair inward
+; Type: hotkey 
+match_pair_inward = Shift-Ctrl-D
+
+;Matching pair
+; Type: hotkey 
+matching_pair = Shift-Ctrl-T
+
+;Wrap with abbreviation
+; Type: hotkey 
+wrap_with_abbreviation = Shift-Ctrl-A
+
+;Next edit point
+; Type: hotkey 
+next_edit_point = Ctrl-Alt-Right
+
+;Prev edit point
+; Type: hotkey 
+prev_edit_point = Ctrl-Alt-Left
+
+;Select line
+; Type: hotkey 
+select_line = Ctrl-Alt-L
+
+;Merge lines
+; Type: hotkey 
+merge_lines = Shift-Ctrl-M
+
+;Split/join tag
+; Type: hotkey 
+split_join_tag = Shift-Ctrl-J
+
+;Remove tag
+; Type: hotkey 
+remove_tag = Ctrl-K
+
+;Evaluate math expression
+; Type: hotkey 
+evaluate_math_expression = Shift-Ctrl-Y
+
+;Increment number by 1
+; Type: hotkey 
+increment_number_by_1 = Ctrl-Up
+
+;Decrement number by 1
+; Type: hotkey 
+decrement_number_by_1 = Ctrl-Down
+
+;Increment number by 01
+; Type: hotkey 
+increment_number_by_01 = Alt-Up
+
+;Decrement number by 01
+; Type: hotkey 
+decrement_number_by_01 = Alt-Down
+
+;Increment number by 10
+; Type: hotkey 
+increment_number_by_10 = Ctrl-Alt-Up
+
+;Decrement number by 10
+; Type: hotkey 
+decrement_number_by_10 = Ctrl-Alt-Down
+
+;Select next item
+; Type: hotkey 
+select_next_item = Shift-Ctrl-.
+
+;Select previous item
+; Type: hotkey 
+select_previous_item = Shift-Ctrl-,
+
+;Reflect css value
+; Type: hotkey 
+reflect_css_value = Ctrl-B
+
+;Indent tags: Toggle.
+; Type: hotkey 
+key_toggle:indent = 
+
+;Place cursor: Toggle.
+; Type: hotkey 
+key_toggle:place_cursor = 
+
+
+
+[search]
+
+;Find in project
+; Type: hotkey 
+key_searchProject = Ctrl+H
+
+;Replace in project
+; Type: hotkey 
+key_replaceProject = Ctrl+Shift+H
+
+
+
+[settings]
+
+;Open project preferences.
+; Type: hotkey 
+project:open = 
+
+;Open user preferences.
+; Type: hotkey 
+user:open = 
+
+
+
+[account]
+
+;Sign out.
+; Type: hotkey 
+logout = 
+
+
+
+[project]
+
+;Create project.
+; Type: hotkey 
+create = 
+
+;Open project settings.
+; Type: hotkey 
+preferences = 
+
+;Open project permissions.
+; Type: hotkey 
+permissions = 
+
+;Fork project.
+; Type: hotkey 
+fork = 
+
+;Share project.
+; Type: hotkey 
+share = 
+
+;Export project as zip.
+; Type: hotkey 
+export:zip = 
+
+;Delete project.
+; Type: hotkey 
+delete = 
+
+;Close project.
+; Type: hotkey 
+close = 
+
+
+
+[dashboard]
+
+;Open dashboard.
+; Type: hotkey 
+open = 
+
+
+
+[codio-bower]
+
+;Show Installable
+; Type: hotkey 
+installable = 
+
+;Show Installed
+; Type: hotkey 
+installed = 
+
+
+
+[deployment]
+
+;Deploy current file to default deployment target
+; Type: hotkey 
+key_deploy_current_file = Ctrl+Alt+D
+
+;Open Deploy tab
+; Type: hotkey 
+deploy = 
+
+;Manage deployment targets
+; Type: hotkey 
+manage_targets = 
+
+
+
+[container]
+
+;Restart the box
+; Type: hotkey 
+restart = 
+
+;Reset user home on the box to original state
+; Type: hotkey 
+reset = 
+
+
+
+[sync-structure]
+
+;Synchronize the file structure
+; Type: hotkey 
+sync = 
+
+
+
+[account-settings]
+
+;Open Account Preferences.
+; Type: hotkey 
+preferences = 
+
+
+
